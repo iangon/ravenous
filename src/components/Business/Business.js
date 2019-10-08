@@ -1,5 +1,5 @@
-import React from "./React";
-import ReactDOM from "./ReactDOM";
+import React from "react";
+import ReactDOM from "react-dom";
 import "./Business.css";
 
 const business = {
