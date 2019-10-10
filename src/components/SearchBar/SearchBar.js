@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./SearchBar.css";
 
 const sortByOptions = {
@@ -9,10 +8,22 @@ const sortByOptions = {
 };
 
 class SearchBar extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      term: "",
+      location: "",
+      sortBy: "best_match"
+    };
+  }
+
   renderSortByOptions() {
     return Object.keys(sortByOptions).map(sortByOption => {
       const sortByOptionValue = sortByOptions[sortByOption];
-      return <li key={sortByOptionValue}></li>;
+      console.log(sortByOptionValue);
+
+      return <li key={sortByOptionValue}>{sortByOption}</li>;
     });
   }
 
