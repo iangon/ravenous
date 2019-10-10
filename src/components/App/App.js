@@ -20,11 +20,19 @@ const business = {
 const businesses = [business, business, business, business, business, business];
 
 class App extends Component {
+  searchYelp(term, location, sortBy) {
+    console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
+
+    // Q: How can we interact with the Yelp API using the “Let’s Go” button?
+    // A: I think adding changing the business data to state and updating the
+    //    state here in an api call would work.  Should be async.
+  }
+
   render() {
     return (
-      <div class="App">
+      <div className="App">
         <h1>ravenous</h1>
-        <SearchBar />
+        <SearchBar searchYelp={this.searchYelp} />
         <BusinessList businesses={businesses} />
       </div>
     );
