@@ -1,5 +1,7 @@
 Ravenous is a Codecademy Pro React app learning project.
 
+Each part in this exercize will have a dedicated branch that is then merged into the master branch.
+
 ## Goals
 
 ## Part 1
@@ -11,3 +13,7 @@ Ravenous is a Codecademy Pro React app learning project.
 ## Part 2
 
 - Learn to pass data along components using props
+
+## Part 3
+
+- Setting state in components
